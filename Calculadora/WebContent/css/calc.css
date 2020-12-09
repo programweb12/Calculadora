@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+
+body {
+	text-align: center;
+	vertical-align: middle;
+	overflow: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contenedor {
+	border: 1px solid #c0c0c0;
+	width: 900px;
+	margin: 0 auto;
+	background: #f2f5ee;
+}
+
+header {
+	height: 150px;
+	background-image: url("../img/cabecera.jpg");
+}
+
+h1 {
+	color: #00f;
+	font-variant: small-caps;
+	padding: 40px;
+}
+
+#formulario {
+  	background-color: #f2f2f2;
+  	padding: 20px;
+}
+
+form {
+	width: 100%;
+	max-width: 600px;
+	text-align: center;
+	border: solid 1px #c2c2c2;
+	padding-bottom: 10px;
+	margin: auto;
+	background: #fafafa;
+	font-size: 1.2em;
+	display: inline-block;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+input[type=text],  input[type=number], select {
+	width: 50%;
+	padding: 12px 20px;
+	margin : 8px 0;
+	display: inline-block;
+	border: 1px solid silver;
+	border-radius: 10px;
+	text-align: right;
+	color: #fff;
+	background: #333;
+	margin: 8px 0;
+	font-size: 1em;
+}
+
+input[type=submit], input[type=reset], input[type=button], button {
+	background-color: #8080ff;
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	font-size: 16px;
+	min-width: 21%;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
+	{
+	background-color: #0000a0;
+}
+
+label {
+	color: #8000ff;
+}
+
+/* pantalla maximo 980px */
+@media screen and (max-width:980px) {
+	.contenedor {
+		width: 98%;
+	}
+}
+
